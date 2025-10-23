@@ -1,4 +1,5 @@
-const fibonacci = function(requiredElement) {
+const fibonacci = function(element) {
+    const requiredElement = parseInt(element);
     if(requiredElement < 0) return "OOPS";
 
     const fibonacci = [0, 1, 1];

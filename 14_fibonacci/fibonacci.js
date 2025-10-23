@@ -1,4 +1,16 @@
-const fibonacci = function() {
+const fibonacci = function(requiredElement) {
+    if(requiredElement < 0) return "OOPS";
+
+    const fibonacci = [0, 1, 1];
+
+    if(requiredElement === 1 || requiredElement === 2) return 1;
+
+    for(let index = 3; index <= requiredElement; index++) {
+        fibonacci.push(fibonacci[index-1] + fibonacci[index-2])
+    }
+
+    return fibonacci[requiredElement];
+
 
 };
 
